@@ -12,6 +12,9 @@ const conn = require("./db/conn");
 const Tought = require("./models/Toughts");
 const User = require("./models/User");
 
+//Routes
+const authRoutes = require("./routes/authRoutes");
+
 //Template Engine
 app.engine("handlebars", exphbs.engine());
 app.set("view engine", "handlebars");
@@ -58,6 +61,8 @@ app.use((req, res, next) => {
 
   next();
 });
+
+app.use("/", authRoutes);
 
 conn
   .sync()
