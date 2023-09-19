@@ -6,6 +6,8 @@ const ToughtsController = require("../controllers/ToughtsController");
 
 const checkAuth = require("../helpers/auth").checkAuth;
 
+router.get("/create", checkAuth, ToughtsController.createTought);
+router.post("/create", checkAuth, ToughtsController.createToughtSave);
 router.get("/dashboard", checkAuth, ToughtsController.dashboard);
 router.get("/", ToughtsController.homePage);
 

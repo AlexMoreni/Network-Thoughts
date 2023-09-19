@@ -4,7 +4,7 @@ const db = require("../db/conn");
 const User = require("./User");
 
 const Tought = db.define("Tought", {
-  name: {
+  title: {
     type: DataTypes.STRING,
     allowNull: true,
     require: true,
