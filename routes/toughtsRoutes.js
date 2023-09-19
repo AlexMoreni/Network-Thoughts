@@ -2,8 +2,11 @@ const express = require("express");
 const router = express.Router();
 
 //Controller
-const ToughtsControllerController = require("../controllers/ToughtsController");
+const ToughtsController = require("../controllers/ToughtsController");
 
-router.get("/", ToughtsControllerController.homePage);
+const checkAuth = require("../helpers/auth").checkAuth;
+
+router.get("/dashboard", checkAuth, ToughtsController.dashboard);
+router.get("/", ToughtsController.homePage);
 
 module.exports = router;
