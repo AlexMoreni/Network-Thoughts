@@ -3,7 +3,11 @@ const Tought = require("../models/Toughts");
 
 module.exports = class ToughtsController {
   static async homePage(req, res) {
-    res.render("toughts/home");
+    const toughtsData = await Tought.findAll({ include: User });
+
+    const toughts = toughtsData.map((result) => result.get({ plain: true }));
+
+    res.render("toughts/home", { toughts });
   }
 
   static async dashboard(req, res) {
