@@ -14,6 +14,10 @@ const User = require("./models/User");
 
 //Routes
 const authRoutes = require("./routes/authRoutes");
+const toughtsRoutes = require("./routes/toughtsRoutes");
+
+//Controller
+const ToughtsController = require("./controllers/ToughtsController");
 
 //Template Engine
 app.engine("handlebars", exphbs.engine());
@@ -62,7 +66,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use("/toughts", toughtsRoutes);
 app.use("/", authRoutes);
+
+app.use("/", ToughtsController.homePage);
 
 conn
   .sync()
