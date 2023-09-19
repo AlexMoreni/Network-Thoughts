@@ -1,3 +1,4 @@
+const User = require("../models/User");
 const Tought = require("../models/Toughts");
 
 module.exports = class ToughtsController {
@@ -6,7 +7,20 @@ module.exports = class ToughtsController {
   }
 
   static async dashboard(req, res) {
-    res.render("toughts/dashboard");
+    const userId = req.session.userid;
+    const user = await User.findOne({
+      where: { id: userId },
+      include: Tought,
+      plain: true,
+    });
+
+    if (!user) {
+      res.redirect("/login");
+    }
+
+    const toughts = user.Toughts.map((result) => result.dataValues);
+
+    res.render("toughts/dashboard", { toughts });
   }
 
   static async createTought(req, res) {
@@ -25,7 +39,7 @@ module.exports = class ToughtsController {
       req.flash("message", "Pensamento criado com sucesso!");
 
       req.session.save(() => {
-        res.render("toughts/dashboard");
+        res.redirect("/toughts/dashboard");
       });
     } catch (err) {
       console.log(err);
