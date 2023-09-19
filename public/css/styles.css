@@ -122,6 +122,10 @@
   margin: 0 0.5em;
 }
 
+.dashboard a {
+  color: #f6982d;
+}
+
 /*Login e Register*/
 .auth-container {
   max-width: 450px;

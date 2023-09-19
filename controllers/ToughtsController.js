@@ -20,7 +20,13 @@ module.exports = class ToughtsController {
 
     const toughts = user.Toughts.map((result) => result.dataValues);
 
-    res.render("toughts/dashboard", { toughts });
+    let emptyToughts = false;
+
+    if (toughts.length === 0) {
+      emptyToughts = true;
+    }
+
+    res.render("toughts/dashboard", { toughts, emptyToughts });
   }
 
   static async createTought(req, res) {
