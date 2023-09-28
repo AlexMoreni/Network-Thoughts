@@ -1,0 +1,377 @@
+/*Mobile*/
+
+@media (max-width: 480px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-bottom: 50px;
+  }
+
+  /*Design Pc*/
+  .container-design {
+    display: none !important;
+  }
+
+  /**/
+
+  .container {
+    min-height: 100vh;
+  }
+
+  /*Container Login-Register*/
+  .auth-container {
+    width: 100vw;
+    padding: 10px;
+    background-color: #d9d9d9;
+  }
+
+  /*Form Control*/
+  .form-control {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .form-control input,
+  .form-control textarea {
+    max-width: 90%;
+  }
+
+  .form-control label {
+    margin-top: 10px;
+  }
+
+  form input[type="submit"],
+  .btn {
+    width: 100%;
+    height: 40px;
+    margin: 15px auto;
+  }
+
+  /*Home*/
+  .home-header h1 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+
+  .home-header .input-home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .home-header input {
+    width: 250px !important;
+    border-radius: 0;
+  }
+
+  .order-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-container .actives-order {
+    display: flex;
+  }
+
+  /* Display create and edit tought*/
+  .tought-container-new-edit {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tought-form-control .form-new-edit label {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2em;
+  }
+
+  .tought-form-control form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tought-form-control .form-new-edit textarea {
+    width: 400px;
+    height: 200px;
+    margin-top: 40px;
+    resize: none;
+    margin: 0 auto;
+  }
+
+  .tought-form-control .form-new-edit button {
+    width: 70%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-bottom: 0px;
+    background-color: #d9d9d9;
+  }
+
+  /*Design Pc*/
+  .container-design {
+    display: none !important;
+  }
+
+  /**/
+
+  .container {
+    min-height: 40vh;
+  }
+
+  /*Container Login-Register*/
+  .auth-container {
+    width: 100vw;
+    padding: 10px;
+    background-color: #d9d9d9;
+    margin-top: 200px;
+  }
+
+  /*Form Control*/
+  .form-control {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .form-control input,
+  .form-control textarea {
+    width: 300px;
+  }
+
+  .form-control label {
+    margin-top: 10px;
+  }
+
+  form input[type="submit"],
+  .btn {
+    width: 300px;
+    height: 40px;
+    margin: 15px auto;
+  }
+
+  /*Home*/
+  .home-header h1 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+
+  .home-header .input-home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .home-header input {
+    width: 100% !important;
+    border-radius: 0;
+    margin: 0 auto;
+  }
+
+  .order-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-container .actives-order {
+    display: flex;
+  }
+
+  /* Display create and edit tought*/
+  .tought-container-new-edit {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tought-form-control .form-new-edit label {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2em;
+  }
+
+  .tought-form-control form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tought-form-control .form-new-edit textarea {
+    width: 400px;
+    height: 200px;
+    margin-top: 40px;
+    resize: none;
+    margin: 0 auto;
+  }
+
+  .tought-form-control .form-new-edit button {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-bottom: 0px;
+    background-color: #d9d9d9;
+  }
+
+  /*Design Pc*/
+  .container-design {
+    display: none !important;
+  }
+
+  /**/
+
+  .container {
+    min-height: 40vh;
+  }
+
+  /*Container Login-Register*/
+  .auth-container {
+    width: 100vw;
+    padding: 10px;
+    background-color: #d9d9d9;
+    margin-top: 200px;
+  }
+
+  /*Form Control*/
+  .form-control {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .form-control input,
+  .form-control textarea {
+    width: 300px;
+  }
+
+  .form-control label {
+    margin-top: 10px;
+  }
+
+  form input[type="submit"],
+  .btn {
+    width: 300px;
+    height: 40px;
+    margin: 15px auto;
+  }
+
+  /*Home*/
+  .home-header h1 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+
+  .home-header .input-home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .home-header input {
+    width: 100% !important;
+    border-radius: 0;
+    margin: 0 auto;
+  }
+
+  .order-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-container .actives-order {
+    display: flex;
+  }
+
+  /* Display create and edit tought*/
+  .tought-container-new-edit {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tought-form-control .form-new-edit label {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2em;
+  }
+
+  .tought-form-control form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tought-form-control .form-new-edit textarea {
+    width: 400px;
+    height: 200px;
+    margin-top: 40px;
+    resize: none;
+    margin: 0 auto;
+  }
+
+  .tought-form-control .form-new-edit button {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-bottom: 0px;
+    background-color: #d9d9d9;
+  }
+
+  .order-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-container .actives-order {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-bottom: 150px;
+    background-color: #d9d9d9;
+  }
+
+  .order-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-container .actives-order {
+    display: flex;
+  }
+}

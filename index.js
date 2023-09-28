@@ -55,7 +55,7 @@ app.use(
 app.use(flash());
 
 //Public path
-app.use(express.static(__dirname + "./" + "/public"));
+app.use(express.static("public"));
 
 //Set session to res
 app.use((req, res, next) => {

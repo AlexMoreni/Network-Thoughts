@@ -12,23 +12,25 @@
     <h1>Conheça alguns dos nossos <span>Pensamentos</span></h1>
   {{/if}}
   <h1>Todos os pensamentos</h1>
-  <form action="/" method="get">
+  <form action="/" method="get" class="input-home">
     <input type="text" name="search" placeholder="Está procurando algo?" />
-    <input type="submit" value="Buscar" class="btn" />
+    <button class="btn">Buscar</button>
   </form>
   <div class="order-container">
     <span>Ordenar por:</span>
-    <form action="/" method="get">
-      <input type="hidden" name="search" value="{{this.search}}" />
-      <input type="hidden" name="order" value="new" />
-      <button type="submit"><i class="bi bi-arrow-up"></i></button>
-    </form>
-    <form action="/" method="get">
-      <input type="hidden" name="search" value="{{this.search}}" />
-      <input type="hidden" name="order" value="old" />
-      <button type="submit"><i class="bi bi-arrow-down"></i></button>
-    </form>
-    <a href="/">Limpar</a>
+    <div class="actives-order">
+      <form action="/" method="get">
+        <input type="hidden" name="search" value="{{this.search}}" />
+        <input type="hidden" name="order" value="new" />
+        <button type="submit"><i class="bi bi-arrow-up"></i></button>
+      </form>
+      <form action="/" method="get">
+        <input type="hidden" name="search" value="{{this.search}}" />
+        <input type="hidden" name="order" value="old" />
+        <button type="submit"><i class="bi bi-arrow-down"></i></button>
+      </form>
+    </div>
+    <button class="btn-clean"><a href="/">Limpar</a></button>
   </div>
 </div>
 <div class="toughts-container">
